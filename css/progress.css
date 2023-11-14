@@ -1,0 +1,15 @@
+.progress {
+    position:fixed; 
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100vh;
+    background-color: #aaa;
+   
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0;
+    background-color: rgb(197, 55, 55);
+}

@@ -1,0 +1,390 @@
+/* 
+메인 banner
+상위 박스에 flex
+교차축에 column: align-items
+메인축 row
+ */
+
+
+header {
+    height: 80px;
+    border-bottom: 1px solid #dedede;
+}
+.container {
+    width: 1300px;
+    margin: 0 310px;
+   
+
+}
+
+.main-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 26px;
+}
+
+.main-header h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #232323;
+}
+.main-header ul {
+    display: flex;
+   
+}
+
+.main-header ul li {
+    font-weight: 500;
+}
+
+.main-header ul li+li {
+    margin-left: 30px;
+}
+
+.main-header .burger {
+    display: none;
+}
+
+.main-banner {
+    background-color: #f8f8f8;
+    height: 700px;
+    display: flex;
+    
+
+}
+.banner {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+.main-intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.main-intro p {
+    margin-top: 20px;
+    line-height: 23.17px;
+    color:#767676;
+}
+.main-intro button {
+    width: 150px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.main-img  {
+    margin-left: 98px;
+    
+
+}
+
+.about {
+    display: flex;
+    padding-top: 100px;
+   
+   
+}
+.about h1 {
+    font-size: 48px;
+    position: sticky; 
+    top: 0; 
+    height: 70px; 
+}
+.nav-about {
+    margin-left: 517px;
+}
+.info h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+   
+.nav-about p {
+    color: #767676;
+    font-weight: 500;
+   
+}
+
+.info  {
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+ 
+}
+.info h2 {
+    margin-bottom: 20px;
+}
+.information {
+    display:flex;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+/* .info p:last-of-type {
+    margin-bottom: 30px;
+} */
+
+.main-info p:last-of-type {
+    margin-bottom: 30px;
+}
+.information .main-info:nth-of-type(2) {
+    margin-left: 64px;
+}
+.who p {
+    font-weight: 400;
+    line-height: 23.17px;
+    margin-bottom: 30px;
+
+}
+.main-portfolio {
+    margin-top: 100px;
+    line-height: 24px;
+}
+
+
+.Portfolio h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.port-img {
+    display: flex;
+    margin-bottom: 50px;
+
+}
+.tower .port-txt {
+    margin-left: 20px;
+}
+
+
+.port-img img.opacity {
+    opacity: 1;
+}
+
+.art-img {
+    flex-direction: row-reverse;
+   
+}
+
+.tower img {
+    opacity: 0;
+    transition: 0.5s;
+}
+.tower img.opacity {
+    opacity: 1;
+}
+
+.tower .port-txt {
+    margin-left: 20px;
+    margin-top: 218px;
+}
+.art-img img {
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+
+.art-img .port-txt {
+     margin-right: 50px;
+    padding-top: 90px; 
+}
+.glamp-img img {
+    opacity: 0;
+    transition: 0.5s;
+}
+.glamp-img .port-txt {
+    margin-top: 269px;
+    margin-left: 20px;
+} 
+
+
+.glamp-img img.opactiy {
+    opacity: 1;
+}
+
+
+
+.port-txt {
+    margin-top: 218px;
+   
+   
+}
+.port-txt h2 {
+    margin-bottom: 10px;
+    font-size: 25px;
+   
+}
+
+.port-txt p {
+    color:#767676;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.port-txt span {
+    font-weight: 700;
+    color:#767676;
+    font-size: 14px;
+   
+}
+.footer {
+    margin-top: 150px; 
+    border-bottom: 150px solid #fff;
+   
+   
+}
+
+.footer h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+   
+}
+
+
+.footer p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #767676;
+    line-height: 25px;
+}
+.footer span {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+
+/* 1300에서 1360으로 태블릿 */
+
+/* max-width 768px이하 적용
+   min-width 768px이상 적용*/
+   @media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    header {
+        height: 60px;
+       
+    }
+    .main-header {
+        padding-top: 10px;
+       
+    }
+    .main-header ul li{
+        display:none;
+    }
+   
+    .burger {
+        width: 39px;
+        height: 39px;
+        border: 1px solid #dedede;
+        border-radius: 10px;
+       
+       
+    }
+    .main-header .burger {
+        display: block;
+    }
+   
+   
+    .burger div {
+        width: 16px;
+        height: 2px;
+        background-color:#232323;
+        margin: 3px;
+        margin-left: 10px;
+ 
+       
+    }
+
+   
+    /* .main-banner {
+        height:500px;
+    } */
+    .main-intro h1 {
+        padding-top: 109px;
+    }
+    .main-img img {
+        height: 0;
+    }
+    .main-about {
+        height: 1089px;
+    }
+    .about {
+        display:block;
+        padding-top: 70px;
+    }
+    .nav-about {
+        margin-top: 30px;
+        padding-right: 50px;
+        margin-left: 0;
+    }
+
+    .main-portfolio {
+        margin-top: 360px;
+    }
+    .Portfolio h1 {
+        margin-bottom: 50px;
+    }
+    .port-img {
+        display:block;
+    }
+   
+    .port-img img {
+        margin-bottom: 20px;
+        /* width: 100%; */
+        width: 688px;
+    }
+    .port-img .port-txt {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    /* .art-img img {
+        margin-top: -50px;
+       
+    } */
+    
+
+
+    .footer {
+        margin-top: 100px;
+      
+    }
+
+
+
+
+   
+
+}
+
+@media (min-width: 483px) {
+    /* .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: justify;
+    } */
+    /* .port-img {
+        display:block;
+    } */
+    /* .port-img img {
+        width: 100%;
+         width: 335px; 
+    } */
+    .about h1 {
+        margin-top:70px;
+    }
+    
+    
+}
